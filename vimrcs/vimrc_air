@@ -1,0 +1,29 @@
+" Vim Settings
+
+" Prevent VIM emulation of VI
+set nocompatible
+
+" Tab stuff
+set autoindent
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Matching parenthesis
+set showmatch
+
+" No highlight
+set nohls
+
+" Search for text incrementally
+set incsearch
+
+" Colors!
+colorscheme desert
+
+" Show line numbers at bottom
+set ruler
+
+" Syntax highlighting
+syntax on

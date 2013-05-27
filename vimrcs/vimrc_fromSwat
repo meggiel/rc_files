@@ -1,0 +1,39 @@
+"source ~/.vim/colors/desert.vim
+"source ~/.vim/colors/arizona.vim
+" Vim Settings
+
+" Misc stuff
+set nocompatible
+"set wm=6             " text wrapping
+set bs=2              " allow backspacing
+set pastetoggle=<F5>  " toggle set paste on and off
+set showmatch         " show matching braces
+set ruler             " show information
+set mouse=nc					" enable mouse control
+" colorschemes are stored in /usr/share/vim/vim70/colors
+
+" Tabbing stuff
+set shiftwidth=2
+"set expandtab		" makes tabs spaces
+set tabstop=2
+"set noautoindent
+"set smartindent
+
+" Key bindings
+imap <C-h>        <Left>
+imap <C-j>        <Down>
+imap <C-k>        <Up>
+imap <C-l>        <Right>
+nnoremap <F3> <C-W>w
+nnoremap <S-F3> <C-W>W
+
+colorscheme arizona
+"colorscheme desert
+
+" Programming
+set background=dark
+filetype on
+filetype plugin on
+filetype indent on
+syntax enable
+set foldmethod=marker

@@ -1,0 +1,59 @@
+# 
+# Meggie Ladlow's .bashrc
+#
+
+PS1='\[\e[0;32m\]\h\[\e[0m\] \[\e[0;33m\][\w]\$ \[\e[0m\]'
+PS2='more> '
+
+PATH=/home/margarel/bin:/usr/swat/bin:/usr/local/bin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/X11R6/bin:/usr/games
+
+HISTSIZE=50
+HISTFILESIZE=25
+
+EDITOR=vim
+BROWSER=firefox
+
+# ---------------------------------------------------------------
+# aliases 
+alias ls='ls --color'
+alias ll='ls -hl --color'
+alias lla='ls -ahl --color'
+alias la='ls -ha --color'
+alias lnew='ls -alt | head -16'
+alias h='history'
+alias c='/usr/bin/clear'
+alias df='df -h'
+alias du='du -h'
+alias land='enscript -2rhGj --tabsize=2'
+alias landpy='enscript -2rhGj --tabsize=4'
+alias xlock='/usr/bin/xlock -remote -mode random -nice 10'
+alias muff='mutt -f'
+alias murf='mutt -R -f'
+alias mv='mv -i'
+alias update40='update40; ~/yiemod'
+alias cp='cp -i'
+alias rm='rm -i'
+alias grep='grep --color -n'
+alias frozen-bubble='frozen-bubble --no-sound'
+#alias jaimbot='java -classpath "build/classes:lib/rdf-1.0.ar:lib/megahal-1.0.jar:conf" com.levelonelabs.aimbot.AIMBot'
+
+# color information
+#GREP_COLORS="ms=31:mc=31:sl=:cx=:fn=35:ln=32:bn=32:se=36"
+GREP_COLORS="ms=31:mc=31:sl=:cx=:fn=36:ln=32:bn=32:se=35"
+# 3rd param (with 4) is the background
+#LS_COLORS="di=01;34:ln=01;34;46:ex=01;32"
+LS_COLORS="di=01;34:ln=01;36:ex=01;32"
+
+# shell functions
+function mp4 { mpage -4f  $1 | lp; }
+function mp4l { mpage -4fl $1 | lp; }
+function mp2 { mpage -2f $1 | lp; }
+function mp2l { mpage -2fl $1 | lp; }
+function p4 { psf -4e  $1 | lp; }
+function p4w { psf -4ew  $1 | lp; }
+
+# export
+export EDITOR BROWSER GREP_COLORS LS_COLORS
+
+# NLTK
+export NLTK_DATA=/usr/local/share/nltk/data/
